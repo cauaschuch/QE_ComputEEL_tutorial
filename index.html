@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Tutoriais</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial, sans-serif; background-color: #f0f0f5; padding: 20px; }
+        header { background-color: #4CAF50; padding: 10px; text-align: center; color: white; border-radius: 10px; }
+        nav { margin-top: 10px; display: flex; gap: 10px; justify-content: center; }
+        button { padding: 10px 20px; cursor: pointer; border: none; background-color: #4CAF50; color: white; border-radius: 5px; }
+        button:hover { background-color: #45a049; }
+        section { margin-top: 20px; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de Tutoriais</h1>
+    </header>
+
+    <nav>
+        <button onclick="showTab('html')">HTML</button>
+        <button onclick="showTab('css')">CSS</button>
+        <button onclick="showTab('javascript')">JavaScript</button>
+    </nav>
+
+    <section id="html">
+        <h2>Tutorial de HTML</h2>
+        <p>Aqui vai o conteúdo do tutorial de HTML.</p>
+    </section>
+
+    <section id="css" class="hidden">
+        <h2>Tutorial de CSS</h2>
+        <p>Aqui vai o conteúdo do tutorial de CSS.</p>
+    </section>
+
+    <section id="javascript" class="hidden">
+        <h2>Tutorial de JavaScript</h2>
+        <p>Aqui vai o conteúdo do tutorial de JavaScript.</p>
+    </section>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(tabId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
