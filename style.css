@@ -50,3 +50,42 @@ section {
 .hidden {
     display: none;
 }
+
+/* ====== Blocos de código padrão ====== */
+pre {
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/* ====== Bloco estilo terminal ====== */
+.terminal {
+    background-color: #000000;
+    color: #00ff88;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+}
+
+/* (Opcional) Bloco de dica ou alerta */
+.alerta {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-left: 5px solid #ffeeba;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
