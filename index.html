@@ -2,13 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>ComputEEL/Tutoriais</title>
+    <title>ComputEEL/Título da Página</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header"></div>
 
+    <div id="header"></div>
     <script>
         fetch("header.html")
             .then(res => res.text())
@@ -18,17 +18,18 @@
     </script>
 
     <section>
-        <h2>Esse site foi desenvolvido com o intuito de ajudar os alunos de iniciação científica com os cálculos DFT pelo Quantum Espresso</h2>
-        <p>Escolha um tutorial no menu acima para começar!</p>
+        <!-- Conteúdo específico da página -->
+        <h2>Título do tutorial</h2>
+        <p>Introdução ao conteúdo...</p>
+
+        <pre><code>
+Comandos ou exemplos aqui
+        </code></pre>
+
+        <div class="terminal">
+$ exemplo de comando no terminal
+        </div>
     </section>
-    <div class="banner">
-      <div class="slides">
-        <img src="img1.jpg" alt="Imagem 1">
-        <img src="img2.jpg" alt="Imagem 2">
-        <img src="img3.jpg" alt="Imagem 3">
-      </div>
-    </div>
 
 </body>
 </html>
-
