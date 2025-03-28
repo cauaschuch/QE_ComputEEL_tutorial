@@ -2,65 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComputEEL/Tutoriais</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Ubuntu Mono', monospace;
-            background-color: #f0f0f5;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #440154; /* roxo escuro viridis */
-            padding: 10px;
-            text-align: center;
-            color: white;
-            border-radius: 10px;
-        }
-
-        nav {
-            margin-top: 10px;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        button {
-            padding: 10px 20px;
-            cursor: pointer;
-            border: none;
-            background-color: #31688e; /* azul médio viridis */
-            color: white;
-            border-radius: 5px;
-            font-family: 'Ubuntu Mono', monospace;
-        }
-
-        button:hover {
-            background-color: #35b779; /* verde-claro viridis */
-        }
-
-        section {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
 </head>
-
 <body>
     <div id="header"></div>
 
@@ -71,39 +16,11 @@
                 document.getElementById("header").innerHTML = data;
             });
     </script>
-    <section id="input">
-        <h2>Montando o arquivo de entrada e entendendo o seu composto</h2>
-        <p></p>
-    </section>
-    <section id="fe_tutorial" class="hidden">
-        <h2>Tutorial completo para o ferro (BCC)</h2>
-        <p></p>
-    </section>
-    <section id="bands" class="hidden">
-        <h2>Calculando as bandas sobre um caminho na Zona de Brillouin</h2>
-        <p></p>
-    </section>
-    <section id="ELF" class="hidden">
-        <h2>Função de localização eletrônica</h2>
-        <p></p>
-    </section>
 
-    <section id="prjband" class="hidden">
-        <h2>Tutorial de como calcular bandas projetadas</h2>
-        <p></p>
+    <section>
+        <h2>Esse site foi desenvolvido com o intuito de ajudar os alunos de iniciação científica com os cálculos DFT pelo Quantum Espresso</h2>
+        <p>Escolha um tutorial no menu acima para começar!</p>
     </section>
-    <section id="projfermi" class="hidden">
-        <h2>Tutorial de como calcular a superfície de fermi projetada</h2>
-        <p></p>
-    </section>
-
-    <script>
-        function showTab(tabId) {
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.add('hidden');
-            });
-            document.getElementById(tabId).classList.remove('hidden');
-        }
-    </script>
 </body>
 </html>
+
