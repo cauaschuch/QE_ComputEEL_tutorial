@@ -6,19 +6,19 @@
     <p>Para o composto <strong>Ac₂CdGe</strong> com grupo espacial <code>225</code>, temos:</p>
 
     <ul>
-        <li><strong>4a</strong> Ge &rarr; (0, 0, 0)</li>
-        <li><strong>4b</strong> Cd &rarr; (1/2, 0, 0)</li>
-        <li><strong>8c</strong> Ac &rarr; (1/4, 3/4, 3/4)</li>
+        <li><strong>4a</strong> Ge → <code>(0, 0, 0)</code></li>
+        <li><strong>4b</strong> Cd → <code>(1/2, 0, 0)</code></li>
+        <li><strong>8c</strong> Ac → <code>(1/4, 3/4, 3/4)</code></li>
     </ul>
 
     <p>Consultando o site <a href="https://www.cryst.ehu.es/" target="_blank">Bilbao Crystallographic Server</a> (WYCKPOS para o número <code>225</code>), obtemos as posições equivalentes:</p>
 
-    <pre>
+    <pre><code>
 (0, 0, 0)
 (0, 1/2, 1/2)
 (1/2, 0, 1/2)
 (1/2, 1/2, 0)
-    </pre>
+    </code></pre>
 
     <p>Exemplos de posições obtidas aplicando as simetrias:</p>
     <ul>
@@ -27,12 +27,12 @@
 
     <h3>Posições finais em coordenadas fracionárias (em <code>alat</code>):</h3>
 
-    <pre>
+    <pre><code>
 0.00000000  0.00000000  0.00000000  Ge
 0.50000000  0.50000000  0.50000000  Cd
 0.75000000  0.75000000  0.75000000  Ac
 0.25000000  0.25000000  0.25000000  Ac
-    </pre>
+    </code></pre>
 
     <h3>Parâmetro de rede:</h3>
     <ul>
@@ -41,11 +41,11 @@
     </ul>
 
     <h3>Vetores de rede (ibrav = 2):</h3>
-    <pre>
+    <pre><code>
 v1 = (a/2) * (-1, 0, 1)
 v2 = (a/2) * ( 0, 1, 1)
 v3 = (a/2) * (-1, 1, 0)
-    </pre>
+    </code></pre>
 
     <p>Essas informações permitem montar o arquivo de entrada para simulações no <strong>Quantum ESPRESSO</strong> com coordenadas em <code>crystal</code> e unidade de rede em <code>alat</code>.</p>
 </section>
